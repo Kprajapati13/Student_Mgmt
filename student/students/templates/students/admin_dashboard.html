@@ -1,0 +1,26 @@
+{% extends 'students/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<h2>Admin Dashboard</h2>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Total Students</div>
+            <div class="card-body">
+                <h5 class="card-title">{{ total_students }}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Total Classes</div>
+            <div class="card-body">
+                <h5 class="card-title">{{ total_classes }}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
